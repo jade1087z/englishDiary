@@ -1,0 +1,56 @@
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.whiteSpaceNo {
+    white-space: nowrap;
+}
+
+.none {
+    display: none;
+}
+
+.box1 {
+    border: solid var(--black);
+    border-width: 2px 4px 4px 2px;
+    border-radius: 15px;
+}
+
+.box2 {
+    border: solid var(--box-purple2);
+    border-width: 2px 2px 6px 6px;
+    border-radius: 10px;
+}
+
+.box3 {
+    border: solid var(--black);
+    border-width: 2px 6px 6px 2px;
+    border-radius: 30px;
+}
+
+.text {
+    color: blue;
+    -webkit-text-stroke: 1px var(--black);
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.line1 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+input:focus {
+    outline: none;
+}
+
+.section__border {
+    border: 20px solid var(--bg-pink);
+}
