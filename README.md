@@ -1,19 +1,13 @@
 ﻿# KiCanDiary
 kiCanDiary는 클라이언트는 react.js를 서버는 node.js를 사용하며 mongoDB와 noSql을 활용해 만든 기본적인 일기장 기능을 하는 프로젝트입니다.
 로그인 기능은 firebase를 활용해 구현하였고, 전역 상태 관리는 redux를 활용하여 상태 관리를 해결했습니다. 
-01.03//
-header_m 수정
-DiaryList.jsx, scss 수정
-public > index.html 수정, favicon.svg 추가
-
-01.04//
-DiaryView.jsx, scss 추가
 
 반응형
 @media (max-width: 1280px) {}
 @media (max-width: 768px) {}
 @media (max-width: 480px) {}
 
+# 설치 라이브러리
 # client
 
 npx create-react-app .  
@@ -29,14 +23,10 @@ npm i react-calendar
 npm i @studio-freight/lenis
 npm install axios  
 npm install http-proxy-middleware  
-(src폴더에 setupProxy.js 추가)
-
 npm i @emotion/css  
 npm i @emotion/react  
 npm i @emotion/styled @emotion/react
-
 npm install firebase
-
 npm install react-redux  
 npm install @reduxjs/toolkit
 
@@ -69,50 +59,3 @@ npm install multer-s3@2.10.0
 
 npm install axios
 
-(package.json파일에
-
-```js
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon index.js"
-  },
-```
-
-로 변경하기
-)
-
-## branch로 git에 올리기
-
-git checkout -b <새로운 브랜치 이름>
-
-git switch -c <새로운 브랜치 이름>
-
-git add .
-
-git commit -m "커밋 메시지"
-
-git push -u origin <브랜치 이름>
-
-git push origin <브랜치 이름>
-
-## branch 합병하기
-
-1. client 폴더에서 git branch 로 본인 브랜치에 접속 되어있는지 확인 후, 목록에 master 브랜치도 있는지 확인하기.
-   (만약 master가 없다면 git switch -c master 로 추가)
-
-2. git switch master 로 master 브랜치에 접속하기.
-3. git pull origin 으로 master의 최신 커밋 가져오기.
-4. 다시 git switch 본인브랜치 로 돌아오기.
-5. git merge master 하여 본인의 브랜치와 합병.
-6. 파일명에 빨간색으로 느낌표가 떠있다면 파일에 들어가서 최신 소스로 변경하기.(만약 본인 소스가 더 최신이라면 본인 소스로 변경해주세요.)
-7. npm start 하여 오류 없는지 확인하기. 있다면 그 부분도 수정해주세요.
-
-#### 페이지 구현하기
-
-## 트러블 슈팅
-
-<details>
-<summary>[Git 경고 메세지] LF will be replaced by CRLF in 해결 방안</summary>
-
--   `git config --global core.autocrlf true`
-</details>
